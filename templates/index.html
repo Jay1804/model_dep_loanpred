@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>ML API</title>
+
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googlrapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+
+<body>
+
+<div class="login">
+   <h1>Loan status</h1>
+   
+   <form action="{{url_for('predict')}}"method="post">
+   
+   <input type="text" name ="ApplicantIncome" placeholder="ApplicantIncome" required = "required"/>
+   
+    <input type="text" name ="CoapplicantIncome" placeholder="CoapplicantIncome" required = "required"/>
+    
+    <input type="text" name ="LoanAmount" placeholder="LoanAmount" required = "required"/>
+    
+    
+    <input type="text" name ="Loan_Amount_Term" placeholder="Loan_Amount_Term" required = "required"/>
+    
+    <input type="text" name ="Credit_History" placeholder="Credit_History" required = "required"/>
+    
+    <input type="text" name ="Property_Area_Rural" placeholder="Property_Area_Rural" required = "required"/>
+    
+    <input type="text" name ="Dependents_0" placeholder="Dependents_0" required = "required"/>
+    
+    <input type="text" name ="Property_Area_Rural" placeholder="Property_Area_Rural" required = "required"/>
+    
+    
+    <input type="text" name ="Property_Area_Semiurban" placeholder="Property_Area_Semiurban" required = "required"/>
+    
+    <input type="text" name ="Property_Area_Urban" placeholder="Property_Area_Urban" required = "required"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <button type="submit" class="btn btn-primary btn-block btn-large">"Predict</button">
+    
+    </form>
+    
+    <br>
+    <br>
+    
+    {{prediction_text}}
+
+</div>
+
+</body>
+<html>    
+    
